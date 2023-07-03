@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDIA para seu site</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou mude o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="imagem flexivel">
+    </picture>
+    <!--"Pixels" site para baixar imagems e videos-->
+    
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender audio</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/one-piece-opening-23.mp3" type="audio/mp3">
+        <source src="midia/one-piece-opening-23.ogg" type="audio/ogg">
+        <p>infelizmente seu navegador não carrega o audio</p>
+        <p><a href="midia/one-piece-opening-23.mp3">Clique aqui para baixar o arquivo de audio MP3</a></p>
+    </audio> 
+
+    <h1>Videos no sites localmente</h1>
+    <video poster="imagens/fanfiction-one-direction-nobody-can-drag-me-down-4636533-081020152113.jpg" src="midia/Nightcore - Drag Me Down.mp4" controls ></video>
+    <!--hospedar um video assim ira consumir muita banda de internet pro cliente que ira hospetar o site-->
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ppNb9JWks6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Vimeo e um site de hospedar video pago-->
+
+
+    <!--HandBrake conversor de videos-->
+</body>
+</html>

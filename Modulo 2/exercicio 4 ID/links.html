@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        # = id
+        . = Class
+        : = pseudo-class
+        :: = pseudo element
+        > = children(filho)
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: rgb(0, 0, 0);
+            text-decoration: underline;
+        }
+        a::after{
+            content:'(link)';
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/desafios/modulo-02/d010">Repositorios Github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=wI2_YALCJzA&list=PLrVhyUnEQMV-Q6_7tQA5fN-MctGcxk6W-">Canal do YouTube</a></li>
+        <li><a href="https://www.amazon.com.br/ref=nav_logo">Site da Amazon</a></li>
+    </ul>
+</body>
+</html>

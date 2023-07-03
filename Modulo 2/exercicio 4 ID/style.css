@@ -1,0 +1,28 @@
+
+/*
+tudo que tem ID em html vai ser "#" em Css 
+tudo que tem Class e "." em Css
+*/
+/*
+não pode ter o mesmo nome de id utilize class ele pode ser repetido em diversos elementos*/
+body{
+    background-color: rgb(199, 238, 199);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(65, 144, 65);
+}
+
+h2{
+    color: rgb(29, 72, 29);
+}
+h1#site{
+    color: black;
+    text-align: center;
+    background-color: rgb(100, 187, 100);
+}
+.basico{
+    color: rgb(34, 90, 34);
+    font-weight: bolder;
+}

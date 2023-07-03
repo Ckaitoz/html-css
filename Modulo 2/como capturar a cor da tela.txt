@@ -1,0 +1,2 @@
+instale um plugin no seu navegador chamado "COLORZILLA"
+utilize ele para copiar direto a cor utilizada no site
