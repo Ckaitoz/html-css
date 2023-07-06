@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: rgb(255, 0, 247);
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: rgb(255, 255, 0);
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%,-50%);
+            /* valores positicos 50%(direita),50%(baixo)
+            valores negativos vai pro lado contrario -50%(esquerda),-50%(cima)*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
