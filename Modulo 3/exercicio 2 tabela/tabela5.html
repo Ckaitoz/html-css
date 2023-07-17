@@ -21,12 +21,27 @@
             border: 1px solid black;
             padding: 8px;
         }
+        .destaque{
+            background-color: aqua;
+        }
+        col.csexo{
+            background-color: violet;
+        }
 
 
     </style>
 </head>
 <body>
+    <h1>Exercicios de tabela</h1>
     <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+        <!-- cada col e para uma coluna então o nome não importa e so pra ficar facil de entender qual e a coluna eu vai escrever o codido.
+        pode se utilizar "span" para modificar mais de uma coluna -->
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -40,7 +55,37 @@
             <td>25</td>
             <td>Jornalista</td>
         </tr>
-
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr class="destaque">
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Helio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Medica</td>
+        </tr>
+        <tr>
+            <td>Otavio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+        
     </table>
 </body>
 </html>
