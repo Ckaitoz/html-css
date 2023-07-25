@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="in1">Numero 1</label>
+            <input type="number" name="n1" id="in1" max="100" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Numero 2</label>
+            <input type="number" name="n2" id="in2" max="100" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma</label>
+            <output id="isoma">0</output>
+            <!-- output serve so para mostrar coisas na tela não serve para enviar dados -->
+        </p>
+
+        <p>
+            <label for="inum">Rank</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+
+        <p>
+            <label for="iano">Que ano vc nasceu</label>
+            <input type="number" id="iano" min="1900" max="2023" oninput="calcidade()">
+        </p>
+        <p>
+            <label for="idade">Sua idade e:</label>
+            <output id="idade">0</output>
+        </p>
+        <div>
+            <input type="submit" value="Eviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <script>
+        function calcidade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

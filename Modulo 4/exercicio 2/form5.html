@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1></h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="imasc"><label for="imasc">Masculino</label>
+            <input type="radio" name="sex" id="ifemi"><label for="ifemi">Feminino</label>
+            <!-- todos botoes de "radio" tem que ter o mesmo nome quando estiverem no mesmo fieldset -->
+
+        </fieldset>
+        
+            <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Eviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
