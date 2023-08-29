@@ -19,7 +19,7 @@ grandes telas: acima de 2160p */
     img#tv {display: none;}
 }
 
-@media screen and (max-width:768px) and (max-width:992) { /*TABLET*/
+@media screen and (max-width:768px) and (max-width:992px) { /*TABLET*/
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
